@@ -42,7 +42,8 @@ let btn=document.querySelector(".btn")
   function renderProducts(product) {
     product.map((item, index) => {
         container.innerHTML += `
-            <div class="card-content card">
+            <div class="card-content card" data-aos="fade-up"
+     data-aos-duration="3000">
                 <img src="${item.imageUrl}" alt="${item.name}" class="card-image" />
                 <h3 class="card-title">${item.name}</h3>
                 <p>Brand: ${item.brand}</p>
